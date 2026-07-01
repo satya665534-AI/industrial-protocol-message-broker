@@ -1,0 +1,22 @@
+language: c
+fuzzing_engines:
+  - libfuzzer
+sanitizers:
+  - address
+  - undefined
+fuzz_targets:
+  - frame_reader_fuzzer
+  - field_decoder_fuzzer
+  - transport_layer_fuzzer
+  - route_vm_fuzzer
+  - rule_parser_fuzzer
+  - match_table_fuzzer
+  - delta_codec_fuzzer
+  - rle_codec_fuzzer
+  - session_journal_fuzzer
+  - checkpoint_store_fuzzer
+  - ring_window_fuzzer
+  - telemetry_extractor_fuzzer
+  - histogram_fuzzer
+  - replay_engine_fuzzer
+  - full_pipeline_fuzzer
